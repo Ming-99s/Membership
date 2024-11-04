@@ -30,14 +30,11 @@ body{
     }
 
 }
-section{
-    align-items: center;
-    justify-content: center;
+.section{
     display: flex;
-    gap: 3em;
     flex-wrap: wrap;
-    padding: 10px;
-
+    justify-content: center;
+    gap:3em;
 }
 
 h1{
@@ -115,6 +112,9 @@ h1{
     .ruler{
         background-color: white;
     }
+    button{
+    box-shadow: inset 1px -1px 5px rgb(207, 207, 207),0px 0px 5px rgba(50, 50, 50, 0.535);
+    }
 }
 p{
     margin: 15px 0;
@@ -124,8 +124,7 @@ button{
     color:white;
     border:none;
     padding: 11px 40px;
-    box-shadow: inset 2px -2px 5px rgb(7, 118, 151);
-    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.535);
+    box-shadow: inset 1px -1px 5px rgb(7, 118, 151),0px 0px 5px rgba(50, 50, 50, 0.535);
     border-radius: 30px;
     font-weight: bold;
     position: absolute;
@@ -141,4 +140,28 @@ button:hover{
     #premium{
         transform: scale(1);
     }
+
+}
+@media (width<=984px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+        width: 70%;
+        gap:25em;
+
+    }
+    .box{
+        transform: scale(1.5);
+        
+    }
+    #premium{
+        transform: scale(1.5);
+
+    }
+
 }
